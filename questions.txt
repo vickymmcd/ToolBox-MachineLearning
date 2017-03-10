@@ -1,0 +1,17 @@
+1. The general trend in the curve is a positive relationship. It seems that
+as the percentage of data used for training increases, so does the accuracy
+on the test set. This makes sense because if there is more training data
+then it makes sense that there would also be more accuracy with the test set.
+
+2. It seems the lower half of the data set is noisier than the part on the
+upper portion of the curve. I am guessing that this is because when there is
+so little training data, it could work out really well and have good accuracy
+on the testing set or it could end up having really poor accuracy. I am guessing
+that this explains the wider variability when there is less training data.
+
+3. It seems like the curve smooths out after about 100 trials.
+
+4. A larger C value means that you need to use less training data to get a
+higher accuracy on the testing set. It seems if you make the C value too small
+(ie 10^-20) it never increases in accuracy as much as it does with a larger
+C value.
